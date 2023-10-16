@@ -62,7 +62,8 @@ export default function App() {
 
   return (
     <>
-   <h2 className="heading"> 💰🧾 Bill Spliting</h2>
+   <h2 className="heading"> 💰🧾 Bill Spliting </h2>
+   
     <div className="app">
       <div className="sidebar">
         <FriendsList
@@ -84,6 +85,8 @@ export default function App() {
       onSpiltBill = {handleSplitBill}
        />}
     </div>
+    <p className="sub-heading">-Made by Jyoti</p>
+  
     </>
   );
 }
