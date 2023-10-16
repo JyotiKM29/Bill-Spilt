@@ -85,7 +85,11 @@ export default function App() {
       onSpiltBill = {handleSplitBill}
        />}
     </div>
-    <p className="sub-heading">-Made by Jyoti</p>
+    <button className="sub-heading">
+  <a href="https://jyoti-km.vercel.app/" target="_blank" rel="noopener noreferrer">
+    -Made by Jyoti
+  </a>
+</button>
   
     </>
   );
@@ -119,12 +123,12 @@ function Friend({ friend, onSelection, selectedFriend }) {
 
       {friend.balance < 0 && (
         <p className="red">
-          You owe {friend.name} ₹{Math.abs(friend.balance)}
+          You will pay {friend.name} ₹{Math.abs(friend.balance)}
         </p>
       )}
       {friend.balance > 0 && (
         <p className="green">
-          {friend.name} owes you ₹{Math.abs(friend.balance)}
+          {friend.name} will pay me ₹{Math.abs(friend.balance)}
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
